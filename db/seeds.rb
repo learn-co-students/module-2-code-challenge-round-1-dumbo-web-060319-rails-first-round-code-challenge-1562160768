@@ -19,3 +19,9 @@ end
 sweets.each do |sweet|
   Sweet.create(name: sweet)
 end
+
+# vs1 = VendorSweet.create(vendor: "Insomnia Cookies", sweet: "Chocolate Chip Cookie", price: 32)
+# vs2 = VendorSweet.create(vendor: "Carvel", sweet: "Brownie", price: 45)
+# vs3 = VendorSweet.create(vendor: "Tribeca Treats", sweet: "M&Ms Cookie", price: 58)
+
+

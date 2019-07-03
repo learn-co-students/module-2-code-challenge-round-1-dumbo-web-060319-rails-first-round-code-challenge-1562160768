@@ -9,13 +9,16 @@
 Vendor.destroy_all
 Sweet.destroy_all
 
-vendors = ["Insomnia Cookies", "Cookies Cream","Carvel","Gregory's Coffee","Duane Park Patisserie","Tribeca Treats"]
-sweets = ["Chocolate Chip Cookie", "Chocolate Chunk Cookie","M&Ms Cookie","White Chocolate Cookie","Brownie","Peanut Butter Icecream Cake", ]
 
-vendors.each do |vendor|
-  Vendor.create(name: vendor)
-end
+insomnia = Vendor.create(name: "Insomnia Cookies")
+cream = Vendor.create(name: "Cookies Cream")
+carvel = Vendor.create(name: "Carvel")
 
-sweets.each do |sweet|
-  Sweet.create(name: sweet)
-end
+chip = Sweet.create(name: "Chocolate Chip Cookie")
+chunk = Sweet.create(name: "Chocolate Chunk Cookie")
+mandm = Sweet.create(name: "M&Ms Cookie")
+
+join1 = Vendorsweet.create(price: 5, vendor: insomnia, sweet: chip)
+join2 = Vendorsweet.create(price: 4, vendor: cream, sweet: chunk)
+join3 = Vendorsweet.create(price: 3, vendor: carvel, sweet: mandm)
+

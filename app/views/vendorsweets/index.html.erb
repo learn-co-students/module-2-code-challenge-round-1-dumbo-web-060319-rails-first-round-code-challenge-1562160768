@@ -1,0 +1,7 @@
+<h1>All Joiners</h1>
+
+<ul>
+  <% @vendorsweets.each do |joiner| %>
+    <li><%= link_to joiner.price, @joiner %></li>
+  <% end  %>
+</ul>

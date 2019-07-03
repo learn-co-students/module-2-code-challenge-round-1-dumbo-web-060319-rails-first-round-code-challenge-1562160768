@@ -1,0 +1,23 @@
+<h1> We have cookies @ <%= @vendor.name %> </h1>
+
+<ul>
+<% @vendor.sweets.each do |sweet|%>
+<li> <%= sweet.name %> </li>
+<% end %>
+</ul>
+
+<h1> Add a cookie to this vendor </h1>
+
+ <!-- <%= form_for @sweets do |s|%>
+ <%= s.collection_select %> 
+ 
+ This should be a link_to the new method in the controller
+ the new show page should have the drop down menus which would then
+ call the create method, and the create method will use those params from
+ the new view page menu entries to create a new instance of the joiner class
+ Vendorsweet.create.
+ 
+ -->
+
+
+

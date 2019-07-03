@@ -1,7 +1,20 @@
 <h1>All Vendors</h1>
-
+<img src="https://www.muscatwave.com/admin/uploads/sweets-shop-1534128693.jpeg">
 <ul>
   <% @vendors.each do |vendor| %>
-    <li><%= vendor.name %></li>
+    <li><%= link_to vendor.name, vendor_path(vendor) %></li>
+    <ul>
+      <p> Offerings: </p>
+      <%vendor.sweets.each do |x| %>
+      <li><%=button_to x.name, sweet_path(x), method: :get%></li>
+      <%end%>
+    </ul>
   <% end  %>
 </ul>
+
+<h2> Click to create a new Vendorsweet </h2>
+
+<%=button_to "Create a Vendorsweet", new_vendorsweet_path, method: :get%>
+<br>
+<h3> In case you wanted to see all current vendorsweets: </h3>
+<%=button_to "See all Vendorsweets", vendorsweets_path, method: :get%>

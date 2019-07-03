@@ -1,0 +1,16 @@
+<h1> List of all Vendorsweets </h1>
+
+<ul>
+    <%@vs.each do |vs|%>
+        <li>
+            <p>Price: <%=vs.price%> -- Sweet: <%=vs.sweet.name%> --Vendor: <%=vs.vendor.name%></p>
+            <ul>
+                <%=button_to "Destroy this Vendorsweet", vendorsweet_path(vs), method: :delete%>
+            </ul>
+        </li>
+    <%end%>
+
+</ul>
+
+<%= link_to "Create a new vendorsweet", new_vendorsweet_path%>
+

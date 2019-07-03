@@ -1,7 +1,25 @@
 <h1>All Sweets</h1>
 
+<img src="http://cdn.jasnor.com.au/media/catalog/product/cache/1/image/330x/9df78eab33525d08d6e5fb8d27136e95/u/7/u75352_1.png">
+
 <ul>
   <% @sweets.each do |sweet| %>
-    <li><%= sweet.name %></li>
+      <li><%= link_to sweet.name, sweet_path(sweet) %></li>
+      <ul>
+        <p> Available at: </p>
+        <%sweet.vendors.each do |v|%>
+          <li>
+            <%=button_to v.name, vendor_path(v), method: :get%>
+          </li>
+        <%end%>
+      </ul>
   <% end  %>
 </ul>
+
+<h2> Click to create a new Vendorsweet: </h2>
+
+<%=button_to "Create new Vendorsweet", new_vendorsweet_path, method: :get%>
+<br>
+<h3> In case you wanted to see all the vendorsweets: </h3>
+<%=button_to "See all Vendorsweets", vendorsweets_path, method: :get%>
+<br>

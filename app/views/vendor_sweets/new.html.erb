@@ -1,0 +1,16 @@
+<h1> Create Purchase </h1> 
+
+<% if flash[:error] %>
+  <ul>
+  <% flash[:error].each do |error| %>
+    <li> <%= error %> </li>
+  <% end %>
+  </ul>
+<% end %>
+
+<%= form_for @vendor_sweet do |f| %>
+  Vendor : <%= f.collection_select :vendor_id, Vendor.all, :id, :name %> <br />
+  Sweet  : <%= f.collection_select :sweet_id, Sweet.all, :id, :name %> <br />
+  Price  : <%= f.number_field :price %> <br />
+  <%= f.submit %>
+<% end %>

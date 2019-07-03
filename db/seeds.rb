@@ -19,3 +19,5 @@ end
 sweets.each do |sweet|
   Sweet.create(name: sweet)
 end
+
+vendor_sweet1 = VendorSweet.create(vendor: Vendor.first, sweet: Sweet.first, price: 100)

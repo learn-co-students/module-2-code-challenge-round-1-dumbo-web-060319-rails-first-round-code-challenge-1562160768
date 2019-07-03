@@ -1,0 +1,14 @@
+
+<h2>
+  <%= link_to "Create New Sweet", new_sweet_path  %>
+</h2>
+
+<h2>List of Sweets</h2>
+
+<ul>
+  <% @sweet.each do |sweet| %>
+    <li>
+      <%= link_to sweet.name, sweet_path(sweet.id) %> 
+    </li>
+  <% end %>
+</ul>

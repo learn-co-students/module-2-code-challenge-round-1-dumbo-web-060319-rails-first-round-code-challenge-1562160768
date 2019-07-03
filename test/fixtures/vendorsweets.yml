@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  price: 1
+  vendor: one
+  sweet_belongs_to: MyString
+
+two:
+  price: 1
+  vendor: two
+  sweet_belongs_to: MyString

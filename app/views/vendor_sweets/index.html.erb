@@ -1,0 +1,18 @@
+<h1> ~ All Vendor Sweets ~ </h1>
+
+<h3>
+
+    <% @vendor_sweets.each do |vendorsweet| %>
+        <ul>
+            <li> <%= link_to "#{vendorsweet.sweet.name} (sold at #{vendorsweet.vendor.name})", vendor_sweet_path(vendorsweet) %> </li>
+
+        </ul>
+    <% end %>
+
+    <h4> <%= link_to "Create Vendor Sweet!", new_vendor_sweet_path %> </h4>
+    ~~~~~~~~~~~~~~~~~~~~~~~
+    <h4> <%= link_to "All Sweets", sweets_path %> </h4>
+    <h4> <%= link_to "All Vendors", vendors_path %> </h4>
+
+
+</h3>

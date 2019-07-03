@@ -1,0 +1,17 @@
+<h1>  ~ Vendor Sweet ~ </h1>
+ <marquee> <h5> (...what is a vendor sweet??) </h5> </marquee>
+
+<h3>
+    Sweet: <%= link_to @vendor_sweet.sweet.name, sweet_path(@vendor_sweet.sweet) %>
+    <br>
+    Vendor: <%= link_to @vendor_sweet.vendor.name, vendor_path(@vendor_sweet.vendor) %>
+    <br>
+    Price: <%= @vendor_sweet.price %> cents
+
+
+
+    <h4> <%= link_to "Edit Vendor Sweet", edit_vendor_sweet_path(@vendor_sweet) %> </h4>
+    <h4> <%= button_to "Delete Vendor Sweet", vendor_sweet_path(@vendor_sweet), method: :delete %> </h4>
+    <h4> <%= link_to "Back", vendor_sweets_path %> </h4>
+
+</h3>

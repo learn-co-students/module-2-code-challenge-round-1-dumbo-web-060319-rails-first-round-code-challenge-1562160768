@@ -1,0 +1,14 @@
+<h1> Looking at page for Sweet Name: <%=@sweet.name%> </h1>
+
+<hr>
+<h2> Here is a list of all of this sweet's vendors: </h2>
+<hr>
+<ul>
+<%@sweet.vendors.each do |v|%>
+    <li>
+        <%=v.name%>
+    </li>
+
+<%end%>
+</ul>
+<%=link_to "Return to Index", sweets_path%>

@@ -1,0 +1,15 @@
+<h1> Showing Page for <%=@vendor.name%> </h1>
+
+<h2> Here is a list of all of <%=@vendor.name%>'s sweets: </h2>
+
+
+<ul>
+<%@vendor.sweets.each do |s|%>
+    <li>
+        <%=link_to s.name, sweet_path(s)%>
+    </li>
+<%end%>
+
+</ul>
+
+<%=link_to "Return to Index", vendors_path%>

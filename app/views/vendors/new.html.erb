@@ -1,0 +1,8 @@
+<h1> Create a new vendor </h1>
+
+<%=form_for @vendor do |v|%>
+    <%=v.label :name%>
+    <%=v.text_field :name%>
+
+    <%=v.submit%>
+<%end%> 

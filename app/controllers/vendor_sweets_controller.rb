@@ -13,13 +13,13 @@ class VendorSweetsController < ApplicationController
   end
 
   def create
-        @vendor_sweet = VendorSweet.new(vendor_sweet_params)
-        if @vendor_sweet.valid?
-          redirect_to @vendor_sweet
-        else
-          render :new
-        end
-      end
+    @vendor_sweet = VendorSweet.new(vendor_sweet_params)
+    if @vendor_sweet.valid?
+      redirect_to @vendor_sweet
+    else
+      render :new
+    end
+  end
 
 private
 

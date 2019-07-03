@@ -1,0 +1,7 @@
+<h1>All Purchases</h1>
+
+<ul>
+  <% @vendor_sweets.each do |purchace| %>
+    <li><%= link_to purchace.sweet.name, purchace %></li>
+  <% end  %>
+</ul>

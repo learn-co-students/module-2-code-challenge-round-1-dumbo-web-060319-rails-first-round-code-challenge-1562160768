@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vendor_Sweets</title>
+</head>
+<body>
+	<div> 
+		<h1>All Vendor Sweets:</h1>
+	</div>
+	<div>
+		<ul>
+		  <% @vendor_sweets.each do |vendor_sweet| %>
+		    <li><%= vendor_sweet.name %></li>
+		  <% end  %>
+		</ul>
+	</div>
+</body>
+</html>

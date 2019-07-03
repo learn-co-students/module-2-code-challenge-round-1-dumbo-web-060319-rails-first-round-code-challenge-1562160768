@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> <%= "Vendor" %>
+	</title>
+</head>
+<body>
+	<div> 
+		<h1> <%= "#{@vendor.name}"</h1> %>
+	</div>
+	<div>
+		<h2> Sweets </h2>
+		<ul> 
+			<% @vendor.vendor_sweets.each do |vs| %>
+				<li><%= vs.sweet.name %> </li>
+			<% end %>
+
+		</ul> 
+	</div>
+</body>
+</html>

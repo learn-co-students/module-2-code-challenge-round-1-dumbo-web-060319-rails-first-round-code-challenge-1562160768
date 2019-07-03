@@ -39,9 +39,9 @@ We should still go to the selected vendor's show page _if the `VendorSweet` is v
 
 4. The vendor's show page should include the vendor's name (ie. Insomnia Cookies) and a list of the sweets that they sell.
 
-5. On the vendor's index page, we should see a list of vendor's names (we've already done this part for you). When a user clicks on a vendor's name, it should take a user to the vendor's show page.
+5. On the vendor's index page, we should see a list of vendor's names (we've already done this part for you). When a user clicks on a vendor's name, it should take a user to the vendor's show page. DONE 
 
-6. On the sweet's index page, we should see a list of sweet's names (we've already done this part for you). When a user clicks on a sweet's name, it should take a user to the sweet's show page.
+6. On the sweet's index page, we should see a list of sweet's names (we've already done this part for you). When a user clicks on a sweet's name, it should take a user to the sweet's show page. DONE 
 
 7. The sweet's show page should include the sweet's name.
 

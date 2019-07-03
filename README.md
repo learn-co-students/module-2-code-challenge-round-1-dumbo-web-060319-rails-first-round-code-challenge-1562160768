@@ -34,12 +34,12 @@ We've been building an application where we can see all of the sweets that vendo
 3. Let's add some validations. `VendorSweets` should *not* be able to be saved if:
   a) the price is blank
   b) the price is a negative number
-  c) the price is a number that isn't an integer (like 99.5) 
+  c) the price is a number that isn't an integer (like 99.5)
 We should still go to the selected vendor's show page _if the `VendorSweet` is valid_, but if the `VendorSweet` is *not* valid, we should see the form, with the values the user entered. On that page, we should also list of validation messages about what went wrong. To help you test the validations, think about some prices your users could input that _would_ and _wouldn't_ be valid. Try them out.
 
 4. The vendor's show page should include the vendor's name (ie. Insomnia Cookies) and a list of the sweets that they sell.
 
-5. On the vendor's index page, we should see a list of vendor's names (we've already done this part for you). When a user clicks on a vendor's name, it should take a user to the vendor's show page.
+<!-- 5. On the vendor's index page, we should see a list of vendor's names (we've already done this part for you). When a user clicks on a vendor's name, it should take a user to the vendor's show page. -->
 
 6. On the sweet's index page, we should see a list of sweet's names (we've already done this part for you). When a user clicks on a sweet's name, it should take a user to the sweet's show page.
 
@@ -55,7 +55,7 @@ We should still go to the selected vendor's show page _if the `VendorSweet` is v
 + Also remember that [Validations are very important](http://guides.rubyonrails.org/active_record_validations.html)
 
 
-### Stretch 
+### Stretch
 
 8. Make each vendor in the list of vendors on the sweet page link to its respective vendor
 

@@ -19,3 +19,15 @@ end
 sweets.each do |sweet|
   Sweet.create(name: sweet)
 end
+
+
+VendorSweet.create(price:10, vendor:Vendor.first, sweet:Sweet.first)
+
+
+# i=0
+# while i <10
+#   @rand_vendor=Vendor.all.sample
+#   @rand_sweet=Sweet.all.sample
+# VendorSweet.create(price:i, vendor:@rand_vendor, sweet:@rand_sweet)
+# i+=1
+# end

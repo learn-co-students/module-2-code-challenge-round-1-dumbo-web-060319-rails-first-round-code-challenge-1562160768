@@ -1,0 +1,20 @@
+<h1>Create a VendorSweet</h1>
+
+<%if flash[:errors] %>
+    <ul>
+        <% flash[:errors].each do |err_message|%>
+            <%= err_message %>
+        <%end%>
+    </ul>
+<%end%>
+
+<%=for_for @vendorsweet do |f|%>
+    <%=f.label :price%>
+    <%=f.number_field :price%>
+    <%=f.label :vendor_id%>
+    <%=f.collection_select :vendor_id, @vendors, :id, :name%>
+    <%=f.label :sweet_id%>
+    <%=f.collection_select :sweet_id, @sweets, :id, :name%>
+    <%=f.submit "Sumbit"%>
+<%end%>
+

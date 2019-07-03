@@ -2,7 +2,7 @@
 
 It's time to put our Rails know-how to the test.
 
-## Objectives
+## Objectives  
 + MVC
 + REST
 + Request/Response Cycle

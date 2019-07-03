@@ -1,0 +1,16 @@
+<marquee> <h1> ~ <%= @vendor.name %> ~ </h1> </marquee>
+
+<h3>
+
+    Sweets this vendor sells:
+        <ul>
+            <% @vendor.sweets.each do |sweet| %>
+                <li> <%= link_to sweet.name, sweet_path(sweet) %> </li>
+            <% end %>
+
+
+        </ul>
+
+        <h4> <%= link_to "All Vendors", vendors_path %> </h4>
+
+</h3>

@@ -1,7 +1,18 @@
-<h1>All Sweets</h1>
+<h1> ~ All Sweets ~</h1>
 
 <ul>
-  <% @sweets.each do |sweet| %>
-    <li><%= sweet.name %></li>
-  <% end  %>
+<h3>
+
+<% @sweets.each do |sweet| %>
+    <li> <%= link_to sweet.name, sweet_path(sweet) %> </li>
+<% end %>
+<br>
+Click a name and see where you can get some!
+<br>
+<br>
+~~~~~~~~~~~~~
+
+<h4> <%= link_to "View all Vendor Sweets", vendor_sweets_path %> </h4>
+
+<h3>
 </ul>

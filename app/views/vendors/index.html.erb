@@ -1,7 +1,14 @@
 <h1>All Vendors</h1>
 
 <ul>
-  <% @vendors.each do |vendor| %>
-    <li><%= vendor.name %></li>
-  <% end  %>
+<h3>
+
+<% @vendors.each do |vendor| %>
+    <li> <%= link_to vendor.name, vendor_path(vendor) %> </li>
+<% end %>
+<br>
+~~~~~~~~~~~~~~~
+<h4> <%= link_to "View all sweets", sweets_path %> </h4>
+<h4> <%= link_to "View all Vendor Sweets", vendor_sweets_path %> </h4>
+<h3>
 </ul>

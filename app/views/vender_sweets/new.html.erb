@@ -1,0 +1,12 @@
+<h1> Create A VendorSweet </h1>
+
+<%= form_for @vendor_sweet do |f| %>
+  <%= f.label :vendors %>
+  <%= f.collection_select :vendors_id, Vendor.all, :id, :name %>
+  <%= f.label :sweets %>
+  <%= f.collection_select :sweets_id, Sweet.all, :id, :name %>
+  <%= f.label :price %>
+  <%= f.number_field :price %>
+  <%= f.submit %>
+<% end %>
+

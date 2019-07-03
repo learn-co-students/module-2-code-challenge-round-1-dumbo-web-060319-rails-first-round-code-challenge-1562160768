@@ -22,4 +22,4 @@ private
 
     def vendorsweet_params
         params.require(:vendorsweet).permit(:vendor_id, :sweet_id, :price)
-    end
+    end3
